@@ -21,8 +21,9 @@
     print_r($sala->listarAlunos()); 
     echo "<br>Atividade adicionada: " . $sala->adicionarAtividade(" Atividade 1 ", " Descrição da atividade 1 ", " 01/01/2024 ");
     print_r($sala->listarAtividades());
+    echo "<br>Aluno removido: " . $sala->removerAluno("123.456.789-00");
     echo "<br>Nova lista de Alunos : ";
-    print_r($sala->removerAluno("123.456.789-00"));
+    print_r($sala->listarAlunos());
     
 
 ?>

@@ -36,10 +36,12 @@ class SalaVirtual{
     public function removerAluno($cpf){
         foreach($this->alunos as $key => $value){
             if($value->visualizarCpf() == $cpf){
+                $removedAluno = $this->alunos[$key]->visualizarNome();
+                $removedAlunoCpf = $this->alunos[$key]->visualizarCpf();
                 unset($this->alunos[$key]);
             }
         }
-        return $this->listarAlunos();
+        echo "<br><h4> Removido aluno: ". $removedAluno . " portador do CPF: " . $removedAlunoCpf. "</h4>";
     }
 
     public function adicionarAtividade($titulo, $descricao, $data_entrega){
