@@ -1,5 +1,6 @@
 <?php 
-session_start();
+if(!isset($_SESSION))
+    session_start();
 
 /**
  * Classe responsável por gerenciar o login do usuário.
