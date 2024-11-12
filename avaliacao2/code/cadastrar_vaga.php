@@ -61,7 +61,7 @@
     if($validador->verificar_logado()) {
         if(validar_vaga($whatsapp, $email, $descricao, $curso, $empresa)) {
             $vagas = new Vagas();
-            $vagas-> adicionar_vaga($empresa, $descricao, $curso, $empresa, $email, $whatsapp);
+            $vagas-> adicionar_vaga($empresa, $descricao, $curso, $email, $whatsapp);
             header('Location: home.php');
         } else {
             echo "Erro: Por favor, verifique os dados inseridos. Caracteres especiais não são permitidos.";

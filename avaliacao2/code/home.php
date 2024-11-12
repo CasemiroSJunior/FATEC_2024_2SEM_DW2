@@ -51,7 +51,7 @@ $validador->verificar_logado();
                             <p class="card-text">
                                 Descrição: '. $listaVagas[$i]['descritivo_vaga'] .'<br>
                                 Curso: ' . ($listaVagas[$i]['curso'] == 1 ? 'DSM' : 'GE') .'<br>
-                                Contato: '. $listaVagas[$i]['email_contato'] .'<br>
+                                Email contato: '. $listaVagas[$i]['email_contato'] .'<br>
                                 WhatsApp: '. $listaVagas[$i]['numero_whatsapp'] .'<br>
                             </p>
                             <div class="d-flex justify-content-between">
